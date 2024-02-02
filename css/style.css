@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.convertidor {
+    min-width: 50%;
+    margin: auto;
+    padding: 40px 10px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 20px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(58, 21, 204);
+}
+
+#inputCelsius {
+    padding: 10px;
+}
+
+.btnConvertir {
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.btnConvertir:hover {
+    background-color: rgb(63, 70, 129);
+    color: white;
+}
