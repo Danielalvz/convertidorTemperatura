@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
     min-width: 50%;
     margin: auto;
     padding: 40px 10px;
-    background-color: rgb(202, 202, 202);
     border-radius: 20px;
     min-height: 300px;
     display: flex;
@@ -23,15 +23,31 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    background-image: linear-gradient(rgba(99, 106, 110, 0.6), hsla(0, 0%, 100%, 0.088)), url('../img/clima.png');
+    background-size: cover; 
+    background-position: center; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
     text-align: center;
-    color: rgb(58, 21, 204);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.convertidor label {
+    font-weight: bold;
 }
 
 #inputCelsius {
+    border: 1px solid #ccc;
+    border-radius: 8px;
     padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.558);
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 16px;
 }
 
 .btnConvertir {
@@ -39,9 +55,15 @@ h1 {
     padding: 10px 15px;
     cursor: pointer;
     border: none;
+    line-height: 1;
+    font-weight: bold;
 }
 
 .btnConvertir:hover {
     background-color: rgb(63, 70, 129);
     color: white;
+}
+
+#resultados {
+    font-weight: bold;
 }
